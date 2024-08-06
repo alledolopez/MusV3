@@ -86,7 +86,7 @@ h1 {
 .arrow {
     font-size: 40px;
     cursor: pointer;
-    margin: 0px 20px;
+    margin: 0px 10px;
     display: inline-block;
     user-select: none;
 }
