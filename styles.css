@@ -50,6 +50,12 @@ h1 {
     margin-bottom: 15px;
 }
 
+#score-team2{
+    font-size: 35px;
+}
+#score-team1{
+    font-size: 35px;
+}
 .counters {
     display: flex;
     flex-direction: column;
@@ -60,7 +66,7 @@ h1 {
     margin-bottom: 20px;
     padding-top: 10px;
     text-align: center;
-    width: 100%;
+    width: 125px;
 }
 .counter{
     border: 3px solid ;
@@ -68,7 +74,7 @@ h1 {
 }
 
 .number{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .counter-text {
