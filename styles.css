@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #4CAF50;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2E7D32;
     color: white;
     display: flex;
     justify-content: center;
@@ -12,50 +12,46 @@ body {
 
 #game-container {
     text-align: center;
-    width: 100%;
+    width: 90%;
+    max-width: 800px;
     padding: 20px;
     box-sizing: border-box;
+    background: #388E3C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .scoreboard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .team, .counters {
-    width: 100%;
-    margin: 10px 0;
+    padding: 10px;
+    background: #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .team {
     display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-}
-
-.team{
-    border: 3px solid ;
-    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team div {
     margin-bottom: 15px;
+    font-size: 1.2em;
 }
 
-#score-team2{
-    font-size: 35px;
-}
-#score-team1{
-    font-size: 35px;
-}
 .counters {
     display: flex;
     flex-direction: column;
@@ -63,66 +59,59 @@ h1 {
 }
 
 .counter {
-    margin-bottom: 20px;
-    padding-top: 10px;
-    text-align: center;
-    width: 125px;
-}
-.counter{
-    border: 3px solid ;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 200px;
+    background: #66BB6A;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.number{
-    font-size: 30px;
+.number {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.counter-text {
+.counter-text, .arrow {
     cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
 }
 
 .arrow {
-    font-size: 24px;
-    cursor: pointer;
-    margin: 0 10px;
-    display: inline-block;
-    user-select: none;
+    font-size: 1.5em;
+    padding: 5px 10px;
 }
 
-.controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.arrow:hover {
+    color: #FFD54F;
 }
 
 button {
     margin: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background: #43A047;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
-    color: white;
+    background-color: #388E3C;
 }
 
-
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .scoreboard {
-        flex-direction: row;
-        justify-content: space-between;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .team, .counters {
-        width: auto;
-        margin: 0 20px;
-    }
-
-    .team {
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        margin: 0;
     }
 }
