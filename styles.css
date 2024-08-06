@@ -52,6 +52,13 @@ h1 {
     font-size: 1.2em;
 }
 
+#score-team2{
+    font-size: 2em;
+}
+#score-team1{
+    font-size: 2em;
+}
+
 .counters {
     display: flex;
     flex-direction: column;
