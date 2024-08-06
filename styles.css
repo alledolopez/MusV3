@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team, .counters {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.team{
+    border: 3px solid ;
+    border-radius: 10px;
+}
+
+.team div {
+    margin-bottom: 15px;
+}
+
+.counters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+.counter{
+    border: 3px solid ;
+    border-radius: 10px;
+}
+
+.number{
+    font-size: 25px;
+}
+
+.counter-text {
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+    user-select: none;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    .scoreboard {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .team, .counters {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}
